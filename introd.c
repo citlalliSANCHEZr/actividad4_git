@@ -6,6 +6,7 @@ void mostrar(int n,char cadena[])
         printf("%s",cadena);
     }
 }
+
 void capturarEnteros()
 {
     int enteros[5];
@@ -46,6 +47,12 @@ int main()
                 capturarEnteros();
                 break;
             case 2:
+                printf("escribe la cadena de hasta 20 caracteres\n");
+                fflush(stdin);
+                fgets(cadena,sizeof(cadena),stdin);
+                printf("n:\n");
+                scanf("%i",&n);
+                mostrar(n,cadena);
 
                 break;
             case 3:
