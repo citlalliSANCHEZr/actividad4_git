@@ -1,5 +1,5 @@
 #include<stdio.h>
-
+#include"persona.h"
 void mostrar(int n,char cadena[])
 {
     for(size_t i=0;i<n;i++)
@@ -57,11 +57,11 @@ int main()
 
                 break;
             case 3:
-                
+                capturar();
 
                 break;
             case 4:
-                
+                mostar();
                 break;
             default:
                 break;
